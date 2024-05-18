@@ -1,0 +1,14 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+audio.wcsaudio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 6px;
+    display: flex;
+}

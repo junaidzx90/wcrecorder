@@ -1,0 +1,126 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+div#wcsoundbox {
+    font-family: "Roboto", sans-serif;
+}
+
+.wcswrapper {
+    padding: 20px;
+    border: 1px solid orange;
+}
+.wcswrapper h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 !important;
+    color: #333;
+    padding: 0 !important;
+    padding-bottom: 16px !important;
+}
+select.audiolist {
+    padding: 8px !important;
+    border-color: orange !important;
+    outline: none;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+span.wcdevider {
+    display: inline-block;
+    margin-right: 10px;
+    color: orange;
+}
+
+.previousRecords {
+    margin-bottom: 20px;
+}
+
+.stopButton,
+.pauseButton,
+.previousRecords,
+.useButton {
+    display: none;
+}
+
+.wcsRecMeta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 220px;
+}
+
+.max-timer {
+    color: red;
+}
+
+button.wcsbtn{
+    padding: 8px 14px !important;
+    background: orange !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 3px !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+}
+button.useButton {
+    background: #03A9F4 !important;
+}
+button.useButton[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+button.stopButton{
+    background-color: orangered !important;
+}
+
+button.pauseButton{
+    background-color: rgb(0, 174, 255) !important;
+}
+
+.wcrecBtns {
+    display: flex;
+    gap: 5px;
+}
+
+.recording-visual canvas {
+    width: 100%;
+}
+
+audio.wcsaudio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 6px;
+    display: flex;
+}
+
+.audioView {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.audioView audio.wcsaudio {
+    margin: 0;
+    height: 40px;
+}
+
+.audioView button {
+    padding: 0;
+    height: fit-content;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    color: #f34b4b !important;
+    font-size: 14px;
+    min-width: 40px;
+    min-height: 40px;
+}
